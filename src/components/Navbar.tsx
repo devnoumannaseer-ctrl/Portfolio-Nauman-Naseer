@@ -89,78 +89,59 @@ export const Navbar: React.FC = () => {
           {/* Desktop Nav Links & CTA on right side */}
           <div className="hidden md:flex items-center gap-8 lg:gap-10">
             <nav className="flex items-center gap-7 lg:gap-9">
-              <a
-                href="#about"
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollTo('#about');
-                }}
-                className={`text-sm font-semibold tracking-wide transition-colors ${
-                  activeSection === 'about'
-                    ? 'text-white font-bold'
-                    : 'text-zinc-300 hover:text-white'
-                }`}
-              >
-                About me
-              </a>
-
-              <a
-                href="#skills"
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollTo('#skills');
-                }}
-                className={`text-sm font-semibold tracking-wide transition-colors ${
-                  activeSection === 'skills'
-                    ? 'text-white font-bold'
-                    : 'text-zinc-300 hover:text-white'
-                }`}
-              >
-                Skills
-              </a>
-
-              <a
-                href="#projects"
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollTo('#projects');
-                }}
-                className={`text-sm font-semibold tracking-wide transition-colors ${
-                  activeSection === 'projects'
-                    ? 'text-white font-bold'
-                    : 'text-zinc-300 hover:text-white'
-                }`}
-              >
-                Portfolio
-              </a>
-
-              <a
-                href="#services"
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollTo('#services');
-                }}
-                className={`text-sm font-semibold tracking-wide transition-colors ${
-                  activeSection === 'services'
-                    ? 'text-white font-bold'
-                    : 'text-zinc-300 hover:text-white'
-                }`}
-              >
-                Services
-              </a>
+              {[
+                { name: 'About me', href: '#about' },
+                { name: 'Skills', href: '#skills' },
+                { name: 'Portfolio', href: '#projects' },
+                { name: 'Services', href: '#services' },
+              ].map((item) => {
+                const isActive = activeSection === item.href.replace('#', '');
+                return (
+                  <motion.a
+                    key={item.name}
+                    href={item.href}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollTo(item.href);
+                    }}
+                    whileHover={{ y: -2 }}
+                    transition={{ type: 'spring', stiffness: 500, damping: 25 }}
+                    className={`relative py-1 text-sm font-semibold tracking-wide transition-colors duration-200 group ${
+                      isActive ? 'text-white font-bold' : 'text-zinc-300 hover:text-white'
+                    }`}
+                  >
+                    <span>{item.name}</span>
+                    {/* Animated dynamic underline indicator */}
+                    <span
+                      className={`absolute bottom-0 left-0 h-[2px] bg-[#FF4D12] transition-all duration-300 rounded-full ${
+                        isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                      }`}
+                    />
+                  </motion.a>
+                );
+              })}
             </nav>
 
-            {/* "CONTACT ME" White Pill Button from Reference */}
-            <a
+            {/* "CONTACT ME" White Pill Button with Interactive Hover Glow & Shimmer */}
+            <motion.a
               href="#contact"
               onClick={(e) => {
                 e.preventDefault();
                 scrollTo('#contact');
               }}
-              className="bg-white hover:bg-zinc-200 text-black font-extrabold text-xs tracking-wider uppercase px-6 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-200 active:scale-95"
+              whileHover={{
+                scale: 1.06,
+                boxShadow: '0 0 24px rgba(255, 255, 255, 0.4), 0 4px 16px rgba(0,0,0,0.3)',
+              }}
+              whileTap={{ scale: 0.94 }}
+              transition={{ type: 'spring', stiffness: 450, damping: 22 }}
+              className="relative overflow-hidden group bg-white text-black font-extrabold text-xs tracking-wider uppercase px-6 py-2.5 rounded-full shadow-md transition-all duration-200 flex items-center gap-2"
             >
-              CONTACT ME
-            </a>
+              {/* Shimmer sweep effect */}
+              <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/50 to-transparent transition-transform duration-700 pointer-events-none" />
+              <span className="relative z-10">CONTACT ME</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FF4D12] group-hover:scale-150 transition-transform duration-200" />
+            </motion.a>
           </div>
 
           {/* Mobile Menu Toggle Button */}

@@ -58,10 +58,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenResumeModal })
                   <img
                     src={portfolioData.personal.profileImage}
                     onError={(e) => {
-                      (e.target as HTMLImageElement).src = 'https://i.postimg.cc/52mqL580/pic.jpg';
+                      (e.target as HTMLImageElement).src = '/nauman-hero-new.jpg';
                     }}
                     alt={portfolioData.personal.fullName}
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#080808]/85 via-transparent to-transparent" />

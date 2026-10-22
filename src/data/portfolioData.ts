@@ -108,7 +108,7 @@ export const portfolioData: PortfolioData = {
     statusBadge: "Available for Internships & Projects",
     location: "Pakistan",
     email: "dev.nouman.naseer@gmail.com",
-    profileImage: "/pic-transparent.png",
+    profileImage: "https://i.postimg.cc/HnZftSjc/f2286b24-0213-431c-a015-c8159f82a2d2.jpg",
     resumeUrl: "https://i.postimg.cc/x1cD1z6X/Nauman-naseer.png",
     yearsOfCoding: "Academic CS Journey",
   },
