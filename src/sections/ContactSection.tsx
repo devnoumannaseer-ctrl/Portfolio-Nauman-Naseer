@@ -16,6 +16,7 @@ import {
   ExternalLink,
 } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
 import { SectionHeading } from '../components/SectionHeading';
 import { portfolioData } from '../data/portfolioData';
 import confetti from 'canvas-confetti';
@@ -45,6 +46,7 @@ export const ContactSection: React.FC = () => {
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [successNotice, setSuccessNotice] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [emailCopied, setEmailCopied] = useState(false);
 
@@ -69,8 +71,8 @@ export const ContactSection: React.FC = () => {
 
     if (!formData.message.trim()) {
       errs.message = 'Please write your message.';
-    } else if (formData.message.trim().length < 15) {
-      errs.message = 'Please provide a little more detail (at least 15 characters).';
+    } else if (formData.message.trim().length < 10) {
+      errs.message = 'Please provide a little more detail (at least 10 characters).';
     }
 
     setErrors(errs);
@@ -89,26 +91,67 @@ export const ContactSection: React.FC = () => {
 
     setIsSubmitting(true);
     setErrorMessage(null);
+    setSuccessNotice(null);
 
     try {
-      // Simulate real asynchronous submission with validation
-      await new Promise((resolve) => setTimeout(resolve, 1400));
-
-      // Trigger Orange/White Confetti!
-      confetti({
-        particleCount: 100,
-        spread: 80,
-        origin: { y: 0.7 },
-        colors: ['#FF4D12', '#FFFFFF', '#FF6B35', '#FFA07A', '#D93800'],
+      // Direct real email transmission to dev.nouman.naseer@gmail.com via FormSubmit endpoint
+      const response = await fetch('https://formsubmit.co/ajax/dev.nouman.naseer@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          _replyto: formData.email,
+          _subject: `New Portfolio Message from ${formData.name}: ${formData.subject}`,
+          message: formData.message,
+          _template: 'table',
+          _captcha: 'false',
+        }),
       });
 
-      setSubmitted(true);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setErrors({});
-    } catch {
+      const data = await response.json();
+
+      if (response.ok && (data.success === 'true' || data.success === true)) {
+        // Trigger Orange/White celebration confetti!
+        confetti({
+          particleCount: 100,
+          spread: 80,
+          origin: { y: 0.7 },
+          colors: ['#FF4D12', '#FFFFFF', '#FF6B35', '#FFA07A', '#D93800'],
+        });
+
+        setSubmitted(true);
+        setSuccessNotice(
+          'Your message was sent successfully to dev.nouman.naseer@gmail.com! I will respond to your email promptly.'
+        );
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setErrors({});
+      } else if (data.message && data.message.toLowerCase().includes('activation')) {
+        // First-time FormSubmit activation notice
+        confetti({
+          particleCount: 80,
+          spread: 75,
+          origin: { y: 0.7 },
+          colors: ['#FF4D12', '#FFFFFF', '#FF6B35'],
+        });
+
+        setSubmitted(true);
+        setSuccessNotice(
+          'Message received! FormSubmit has sent a one-time activation confirmation to dev.nouman.naseer@gmail.com. Once activated, all future messages arrive instantly.'
+        );
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setErrors({});
+      } else {
+        throw new Error(data.message || 'Submission was not accepted by the email service.');
+      }
+    } catch (err: unknown) {
+      const errText = err instanceof Error ? err.message : 'Unknown network error';
+      console.error('Contact submission error:', errText);
       setErrorMessage(
-        'An unexpected error occurred while transmitting your message. Please reach out directly at ' +
-          portfolioData.personal.email
+        'An error occurred transmitting the message via the automated service. Please use the direct email buttons below to send to dev.nouman.naseer@gmail.com.'
       );
     } finally {
       setIsSubmitting(false);
@@ -282,10 +325,11 @@ export const ContactSection: React.FC = () => {
                     className="p-4 rounded-2xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-200 mb-6 flex items-start gap-3"
                   >
                     <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                    <div className="text-xs sm:text-sm">
-                      <p className="font-bold text-white">Message successfully received!</p>
+                    <div className="text-xs sm:text-sm space-y-1">
+                      <p className="font-bold text-white">Message successfully transmitted!</p>
                       <p className="text-emerald-300">
-                        Thank you for reaching out. I have received your message and will respond to your email promptly.
+                        {successNotice ||
+                          'Thank you for reaching out. Your message has been sent directly to dev.nouman.naseer@gmail.com.'}
                       </p>
                     </div>
                   </motion.div>
@@ -294,9 +338,37 @@ export const ContactSection: React.FC = () => {
 
               {/* Error Banner */}
               {errorMessage && (
-                <div className="p-4 rounded-2xl bg-red-950/60 border border-red-500/40 text-red-200 mb-6 flex items-start gap-3">
-                  <AlertCircle className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
-                  <span className="text-xs sm:text-sm">{errorMessage}</span>
+                <div className="p-4 rounded-2xl bg-red-950/60 border border-red-500/40 text-red-200 mb-6 flex flex-col gap-3">
+                  <div className="flex items-start gap-3">
+                    <AlertCircle className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
+                    <span className="text-xs sm:text-sm">{errorMessage}</span>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-2 pl-8 pt-1">
+                    <a
+                      href={`https://mail.google.com/mail/?view=cm&fs=1&to=dev.nouman.naseer@gmail.com&su=${encodeURIComponent(
+                        formData.subject || 'Portfolio Inquiry'
+                      )}&body=${encodeURIComponent(
+                        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+                      )}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-red-600 hover:bg-red-500 text-white font-medium text-xs transition-colors"
+                    >
+                      <SiGmail className="w-3.5 h-3.5" />
+                      <span>Send via Gmail</span>
+                    </a>
+                    <a
+                      href={`mailto:dev.nouman.naseer@gmail.com?subject=${encodeURIComponent(
+                        formData.subject || 'Portfolio Inquiry'
+                      )}&body=${encodeURIComponent(
+                        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+                      )}`}
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium text-xs transition-colors"
+                    >
+                      <Mail className="w-3.5 h-3.5" />
+                      <span>Open Mail Client</span>
+                    </a>
+                  </div>
                 </div>
               )}
 
@@ -413,6 +485,39 @@ export const ContactSection: React.FC = () => {
                     </>
                   )}
                 </button>
+
+                {/* Direct Email Compose Shortcuts */}
+                <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#B8B8B8]">
+                  <span className="font-mono text-[11px]">Or reach out directly via:</span>
+                  <div className="flex items-center gap-2">
+                    <a
+                      href={`https://mail.google.com/mail/?view=cm&fs=1&to=dev.nouman.naseer@gmail.com&su=${encodeURIComponent(
+                        formData.subject || 'Portfolio Inquiry'
+                      )}&body=${encodeURIComponent(
+                        formData.message ? `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}` : ''
+                      )}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 hover:bg-red-500/15 border border-[#292929] hover:border-red-500/40 text-zinc-300 hover:text-white transition-all text-[11px] font-mono"
+                      title="Open in Gmail Compose"
+                    >
+                      <SiGmail className="w-3.5 h-3.5 text-red-400" />
+                      <span>Gmail</span>
+                    </a>
+                    <a
+                      href={`mailto:dev.nouman.naseer@gmail.com?subject=${encodeURIComponent(
+                        formData.subject || 'Portfolio Inquiry'
+                      )}&body=${encodeURIComponent(
+                        formData.message ? `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}` : ''
+                      )}`}
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 hover:bg-[#FF4D12]/15 border border-[#292929] hover:border-[#FF4D12]/40 text-zinc-300 hover:text-white transition-all text-[11px] font-mono"
+                      title="Open in Default Mail Client"
+                    >
+                      <Mail className="w-3.5 h-3.5 text-[#FF4D12]" />
+                      <span>Mail App</span>
+                    </a>
+                  </div>
+                </div>
               </form>
             </div>
           </motion.div>
