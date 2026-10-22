@@ -54,20 +54,25 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenResumeModal })
               
               <div className="relative rounded-3xl bg-[#111111] border border-[#292929] p-5 shadow-2xl overflow-hidden">
                 {/* Profile Image with subtle zoom on hover */}
-                <div className="relative aspect-square w-full rounded-2xl overflow-hidden mb-5 bg-[#161616] border border-[#292929]">
+                <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden mb-5 bg-[#161616] border border-[#292929]">
                   <img
                     src={portfolioData.personal.profileImage}
                     onError={(e) => {
-                      (e.target as HTMLImageElement).src = '/nauman-hero-new.jpg';
+                      (e.target as HTMLImageElement).src = '/my-pic.jpg';
                     }}
                     alt={portfolioData.personal.fullName}
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 select-none"
+                    style={{
+                      objectPosition: 'center 62%',
+                      imageRendering: '-webkit-optimize-contrast',
+                    }}
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#080808]/85 via-transparent to-transparent" />
+                  {/* Subtle dark gradient overlay at the bottom so badge contrasts nicely */}
+                  <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/85 via-black/40 to-transparent pointer-events-none" />
                   
                   {/* Floating badge inside photo */}
-                  <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between px-3 py-2 rounded-xl bg-[#080808]/90 backdrop-blur-md border border-[#292929]">
+                  <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between px-3.5 py-2 rounded-xl bg-black/60 backdrop-blur-md border border-white/10 shadow-lg">
                     <span className="text-xs font-mono font-medium text-white flex items-center gap-1.5">
                       <span className="w-2 h-2 rounded-full bg-[#FF4D12]" />
                       NAUMAN NASEER

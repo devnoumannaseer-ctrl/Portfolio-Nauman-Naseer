@@ -231,7 +231,7 @@ export const HeroSection: React.FC = () => {
             animate="visible"
             className="md:col-span-6 lg:col-span-7 flex justify-center md:justify-end items-end relative h-full pt-6 md:pt-0"
           >
-            <div className="relative w-full max-w-[300px] sm:max-w-[360px] lg:max-w-[420px] xl:max-w-[440px] flex justify-center md:justify-end">
+            <div className="relative w-full max-w-[320px] sm:max-w-[380px] lg:max-w-[420px] xl:max-w-[450px] flex justify-center md:justify-end">
               {/* Subtle atmospheric ambient glow */}
               <div className="absolute -inset-4 bg-gradient-to-t from-transparent via-white/5 to-[#FF4D12]/10 rounded-full blur-3xl pointer-events-none opacity-40" />
 
@@ -243,19 +243,20 @@ export const HeroSection: React.FC = () => {
                   repeat: Infinity,
                   ease: 'easeInOut',
                 }}
-                className="relative z-10 w-full flex justify-center md:justify-end overflow-hidden"
+                className="relative z-10 w-full aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] flex justify-center md:justify-end overflow-hidden"
               >
                 <img
-                  src="https://i.postimg.cc/HnZftSjc/f2286b24-0213-431c-a015-c8159f82a2d2.jpg"
+                  src={portfolioData.personal.profileImage}
                   onError={(e) => {
-                    (e.target as HTMLImageElement).src = '/nauman-hero-new.jpg';
+                    (e.target as HTMLImageElement).src = '/my-pic.jpg';
                   }}
                   alt="NAUMAN NASEER"
                   fetchPriority="high"
                   decoding="async"
                   loading="eager"
-                  className="w-full h-auto max-h-[72vh] sm:max-h-[82vh] lg:max-h-[88vh] aspect-[9/16] object-cover object-top select-none filter contrast-[1.03] brightness-[1.02] drop-shadow-[0_20px_45px_rgba(0,0,0,0.9)]"
+                  className="w-full h-full object-cover select-none filter contrast-[1.03] brightness-[1.02] drop-shadow-[0_20px_45px_rgba(0,0,0,0.9)]"
                   style={{
+                    objectPosition: 'center 62%',
                     imageRendering: '-webkit-optimize-contrast',
                     WebkitBackfaceVisibility: 'hidden',
                     transform: 'translateZ(0)',
