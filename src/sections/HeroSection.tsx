@@ -130,10 +130,10 @@ export const HeroSection: React.FC = () => {
       />
 
       {/* Main Container */}
-      <div className="relative z-10 w-full min-h-screen max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 flex flex-col justify-between pt-24 sm:pt-28 pb-10">
+      <div className="relative z-10 w-full min-h-screen max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 flex flex-col justify-center pt-20 md:pt-24 pb-8 md:pb-10">
         
         {/* Middle Content Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center flex-1 my-auto">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8 items-center w-full my-auto">
           
           {/* LEFT SIDE: Name & Intro Typography on Light Gray */}
           <motion.div
@@ -224,14 +224,14 @@ export const HeroSection: React.FC = () => {
             </motion.div>
           </motion.div>
 
-          {/* RIGHT SIDE: Portrait Photograph on Solid Black Background */}
+          {/* RIGHT SIDE: Portrait Photograph Centered in Solid Black Background */}
           <motion.div
             variants={imageContainerVariants}
             initial="hidden"
             animate="visible"
-            className="md:col-span-6 lg:col-span-7 flex justify-center md:justify-end items-end relative h-full pt-6 md:pt-0"
+            className="md:col-span-6 lg:col-span-7 flex items-center justify-center relative pt-6 md:pt-0 md:translate-x-3 lg:translate-x-6 md:-translate-y-6 lg:-translate-y-8"
           >
-            <div className="relative w-full max-w-[320px] sm:max-w-[380px] lg:max-w-[420px] xl:max-w-[450px] flex justify-center md:justify-end">
+            <div className="relative w-full max-w-[340px] sm:max-w-[390px] md:max-w-[440px] lg:max-w-[480px] xl:max-w-[510px] flex items-center justify-center">
               {/* Subtle atmospheric ambient glow */}
               <div className="absolute -inset-4 bg-gradient-to-t from-transparent via-white/5 to-[#FF4D12]/10 rounded-full blur-3xl pointer-events-none opacity-40" />
 
@@ -243,7 +243,7 @@ export const HeroSection: React.FC = () => {
                   repeat: Infinity,
                   ease: 'easeInOut',
                 }}
-                className="relative z-10 w-full aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] flex justify-center md:justify-end overflow-hidden"
+                className="relative z-10 w-full flex items-center justify-center overflow-hidden"
               >
                 <img
                   src={portfolioData.personal.profileImage}
@@ -254,17 +254,16 @@ export const HeroSection: React.FC = () => {
                   fetchPriority="high"
                   decoding="async"
                   loading="eager"
-                  className="w-full h-full object-cover select-none filter contrast-[1.03] brightness-[1.02] drop-shadow-[0_20px_45px_rgba(0,0,0,0.9)]"
+                  className="w-auto h-auto max-h-[60vh] sm:max-h-[66vh] md:max-h-[70vh] lg:max-h-[76vh] max-w-full aspect-[9/16] object-contain select-none filter contrast-[1.03] brightness-[1.02] drop-shadow-[0_20px_45px_rgba(0,0,0,0.9)]"
                   style={{
-                    objectPosition: 'center 62%',
                     imageRendering: '-webkit-optimize-contrast',
                     WebkitBackfaceVisibility: 'hidden',
                     transform: 'translateZ(0)',
                   }}
                 />
 
-                {/* Seamless bottom fade: blends naturally into pure black and cleanly hides watermark */}
-                <div className="absolute inset-x-0 bottom-0 h-16 sm:h-24 bg-gradient-to-t from-black via-black/85 to-transparent pointer-events-none z-20" />
+                {/* Subtle bottom fade: seamlessly dissolves bottom edge and hides watermark without obscuring arms */}
+                <div className="absolute inset-x-0 bottom-0 h-6 sm:h-8 bg-gradient-to-t from-black via-black/80 to-transparent pointer-events-none z-20" />
               </motion.div>
             </div>
           </motion.div>
