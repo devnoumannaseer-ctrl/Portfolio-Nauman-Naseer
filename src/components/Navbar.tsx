@@ -57,37 +57,25 @@ export const Navbar: React.FC<NavbarProps> = ({ onReplayIntro }) => {
       >
         <div className="w-full px-6 sm:px-10 lg:px-14 xl:px-16 flex items-center justify-between">
           
-          {/* Logo / Monogram (Left side: black when over gray hero, white when scrolled) */}
+          {/* Logo / Monogram (Left side: 'NN' logo) */}
           <a
             href="#home"
             onClick={(e) => {
               e.preventDefault();
               scrollTo('#home');
             }}
-            className="flex items-center gap-2 group focus:outline-none"
+            className="flex items-center gap-1.5 group focus:outline-none select-none"
             aria-label="NAUMAN NASEER Home"
           >
-            {/* Geometric NN Monogram matching the reference style */}
-            <div className="flex items-center justify-center">
-              <svg
-                viewBox="0 0 100 100"
-                className={`w-9 h-9 sm:w-10 sm:h-10 transition-colors duration-300 ${
-                  scrolled ? 'text-white' : 'text-black'
-                }`}
-                fill="currentColor"
-              >
-                {/* Modern geometric monogram NN */}
-                <path d="M12 85V15h18l32 46V15h16v70H60L28 39v46H12z" />
-                <path d="M78 15h10v70H78z" opacity="0.4" />
-              </svg>
-            </div>
             <span
-              className={`font-black tracking-tighter text-lg sm:text-xl uppercase transition-colors duration-300 hidden sm:inline ${
+              className={`font-black text-2xl sm:text-3xl tracking-tighter uppercase transition-colors duration-300 ${
                 scrolled ? 'text-white' : 'text-black'
               }`}
+              style={{ fontFamily: "'Bebas Neue', sans-serif" }}
             >
               NN
             </span>
+            <span className="w-1.5 h-1.5 rounded-full bg-[#FF4D12]" />
           </a>
 
           {/* Desktop Nav Links & CTA on the MOST RIGHT SIDE (Inside black section) */}

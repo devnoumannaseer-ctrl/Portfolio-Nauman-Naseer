@@ -134,7 +134,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onReplayIntro }) => {
       />
 
       {/* Main Container - Full width with clean edge padding */}
-      <div className="relative z-10 w-full min-h-screen px-6 sm:px-10 lg:px-14 xl:px-16 flex flex-col justify-center pt-20 md:pt-24 pb-8 md:pb-10">
+      <div className="relative z-10 w-full min-h-screen px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16 flex flex-col justify-center pt-20 md:pt-24 pb-8 md:pb-10">
         
         {/* Middle Content Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-10 xl:gap-12 items-center w-full my-auto">
@@ -144,9 +144,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onReplayIntro }) => {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="md:col-span-6 lg:col-span-6 flex flex-col items-start justify-center text-left pt-4 sm:pt-0 my-auto pl-0 sm:pl-2 md:pl-4 lg:pl-8 xl:pl-12"
+            className="md:col-span-6 lg:col-span-6 flex flex-col items-start justify-center text-left pt-4 sm:pt-0 my-auto"
           >
-            <div className="w-full max-w-[460px] lg:max-w-[500px] xl:max-w-[540px] flex flex-col items-start">
+            <div className="w-full max-w-[420px] lg:max-w-[460px] xl:max-w-[500px] flex flex-col items-start">
               
               {/* "Hi, I am" with orange dot */}
               <motion.div variants={itemVariants} className="flex items-center gap-2 mb-2 sm:mb-3">
@@ -173,7 +173,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onReplayIntro }) => {
                 <span>{portfolioData.personal.primaryRole || "Computer Science Student / Python & C++ Programmer"}</span>
               </motion.h2>
 
-              {/* Introductory Description */}
+              {/* Introductory Description (Two-line bio) */}
               <motion.p
                 variants={itemVariants}
                 className="text-xs sm:text-sm text-[#4A4A4A] font-medium leading-relaxed mb-6 sm:mb-8"
@@ -181,10 +181,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onReplayIntro }) => {
                 {portfolioData.personal.tagline}
               </motion.p>
 
-              {/* Actions & Social Media Buttons Row - Neatly arranged in one line */}
+              {/* Actions & Social Media Buttons Row - Rounded social icons alongside 'CONTACT ME' pill button */}
               <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-2.5 sm:gap-3 w-full">
                 
-                {/* Social Contact Icon Buttons (5 Icons) */}
+                {/* Rounded Social Contact Icon Buttons (5 Icons) */}
                 <motion.div
                   variants={socialContainerVariants}
                   className="flex items-center gap-2 sm:gap-2.5"
@@ -203,7 +203,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onReplayIntro }) => {
                       }}
                       whileTap={{ scale: 0.94 }}
                       transition={{ type: 'spring', stiffness: 450, damping: 22 }}
-                      className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#C4C4C4] text-black shadow-[2px_3px_6px_rgba(0,0,0,0.16)] border border-black/10 flex items-center justify-center transition-colors duration-200 ${item.hoverClass}`}
+                      className={`w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#C4C4C4] text-black shadow-[2px_3px_6px_rgba(0,0,0,0.16)] border border-black/10 flex items-center justify-center transition-colors duration-200 ${item.hoverClass}`}
                       title={item.name}
                       aria-label={item.name}
                     >
@@ -212,7 +212,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onReplayIntro }) => {
                   ))}
                 </motion.div>
 
-                {/* Main Action Button: CONTACT ME */}
+                {/* 'CONTACT ME' Pill Button */}
                 <motion.a
                   href="#contact"
                   onClick={scrollToContact}
@@ -224,7 +224,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onReplayIntro }) => {
                   }}
                   whileTap={{ scale: 0.96 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                  className="relative overflow-hidden group px-4 sm:px-5 py-2.5 rounded-xl bg-black hover:bg-zinc-900 text-white font-extrabold text-[11px] sm:text-xs uppercase tracking-wider flex items-center gap-2 shadow-md transition-all duration-200 cursor-pointer"
+                  className="relative overflow-hidden group px-5 py-2.5 rounded-full bg-black hover:bg-zinc-900 text-white font-extrabold text-[11px] sm:text-xs uppercase tracking-wider flex items-center gap-2 shadow-md transition-all duration-200 cursor-pointer"
                 >
                   <span className="relative z-10">CONTACT ME</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-[#FF4D12] group-hover:scale-150 transition-transform duration-200" />
@@ -238,7 +238,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onReplayIntro }) => {
                     whileHover={{ scale: 1.04, y: -2 }}
                     whileTap={{ scale: 0.96 }}
                     transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                    className="px-3 sm:px-3.5 py-2.5 rounded-xl bg-black/10 hover:bg-black/20 text-black border border-black/15 text-[11px] sm:text-xs font-mono font-bold flex items-center gap-1.5 transition-colors cursor-pointer"
+                    className="px-3 py-2.5 rounded-full bg-black/10 hover:bg-black/20 text-black border border-black/15 text-[11px] sm:text-xs font-mono font-bold flex items-center gap-1.5 transition-colors cursor-pointer"
                     title="Replay Opening Welcome Screen"
                   >
                     <Play className="w-3 h-3 fill-black" />
@@ -251,15 +251,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onReplayIntro }) => {
             </div>
           </motion.div>
 
-          {/* RIGHT SIDE: Portrait Photograph Shifted Slightly to the Right in Solid Black Background */}
+          {/* RIGHT SIDE: Portrait Photograph Positioned in Solid Black Background */}
           <motion.div
             variants={imageContainerVariants}
             initial="hidden"
             animate="visible"
-            className="md:col-span-6 lg:col-span-6 flex items-center justify-center md:justify-end relative pt-6 md:pt-0 my-auto md:pr-4 lg:pr-8 xl:pr-14 md:translate-x-6 lg:translate-x-10 xl:translate-x-14 md:-translate-y-2 lg:-translate-y-3"
+            className="md:col-span-6 lg:col-span-6 flex items-center justify-center md:justify-end relative pt-6 md:pt-0 my-auto md:pr-4 lg:pr-8 xl:pr-12 md:translate-x-4 lg:translate-x-6 xl:translate-x-8 md:-translate-y-2 lg:-translate-y-3"
           >
             {/* Picture Container - Perfectly proportioned in the black zone */}
-            <div className="relative w-full max-w-[300px] sm:max-w-[340px] md:max-w-[390px] lg:max-w-[430px] xl:max-w-[460px] flex items-center justify-center">
+            <div className="relative w-full max-w-[300px] sm:max-w-[340px] md:max-w-[380px] lg:max-w-[420px] xl:max-w-[450px] flex items-center justify-center">
               
               {/* Subtle atmospheric ambient glow */}
               <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white/5 to-[#FF4D12]/10 rounded-full blur-2xl pointer-events-none opacity-30" />
