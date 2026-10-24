@@ -99,11 +99,11 @@ export const AnimatedBackground: React.FC = () => {
         // Draw particle dot
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        // Orange and white mixed particles
+        // Netflix Red and silver-white mixed particles
         if (i % 4 === 0) {
-          ctx.fillStyle = `rgba(255, 77, 18, ${p.alpha * 0.9})`;
+          ctx.fillStyle = `rgba(229, 9, 20, ${p.alpha * 0.9})`;
         } else {
-          ctx.fillStyle = `rgba(240, 240, 245, ${p.alpha * 0.6})`;
+          ctx.fillStyle = `rgba(240, 240, 245, ${p.alpha * 0.5})`;
         }
         ctx.fill();
 
@@ -115,15 +115,15 @@ export const AnimatedBackground: React.FC = () => {
           const dist = Math.sqrt(dx * dx + dy * dy);
 
           if (dist < maxDistance) {
-            const lineAlpha = (1 - dist / maxDistance) * 0.18;
+            const lineAlpha = (1 - dist / maxDistance) * 0.16;
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
-            // If one of the particles is orange, tint the line orange
+            // If one of the particles is Netflix Red, tint the line red
             if (i % 4 === 0 || j % 4 === 0) {
-              ctx.strokeStyle = `rgba(255, 77, 18, ${lineAlpha * 1.2})`;
+              ctx.strokeStyle = `rgba(229, 9, 20, ${lineAlpha * 1.1})`;
             } else {
-              ctx.strokeStyle = `rgba(255, 255, 255, ${lineAlpha})`;
+              ctx.strokeStyle = `rgba(255, 255, 255, ${lineAlpha * 0.8})`;
             }
             ctx.lineWidth = 0.75;
             ctx.stroke();

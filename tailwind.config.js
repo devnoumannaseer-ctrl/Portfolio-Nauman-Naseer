@@ -8,6 +8,18 @@ export default {
     extend: {
       colors: {
         background: "#080808",
+        netflix: {
+          red: "#E50914",
+          redDark: "#B81D24",
+          black: "#0b0b0b",
+          dark: "#141414",
+          card: "#181818",
+          cardHover: "#222222",
+          border: "#262626",
+          green: "#46D369",
+          gray: "#e5e5e5",
+          subtext: "#8c8c8c",
+        },
         surface: {
           DEFAULT: "#111111",
           elevated: "#161616",
@@ -32,10 +44,15 @@ export default {
         },
       },
       fontFamily: {
+        bebas: ['"Bebas Neue"', 'Impact', 'sans-serif'],
+        montserrat: ['"Montserrat"', 'sans-serif'],
         sans: ['"Space Grotesk"', 'Inter', 'system-ui', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
       },
       boxShadow: {
+        'netflix-glow': '0 0 35px rgba(229, 9, 20, 0.4)',
+        'netflix-red-lg': '0 10px 40px -10px rgba(229, 9, 20, 0.65)',
+        'netflix-card': '0 8px 24px -6px rgba(0,0,0,0.85)',
         'glow-orange': '0 0 25px rgba(255, 77, 18, 0.35)',
         'glow-orange-lg': '0 0 45px rgba(255, 77, 18, 0.55)',
         'glow-orange-sm': '0 0 15px rgba(255, 77, 18, 0.25)',

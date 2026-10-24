@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Play } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { portfolioData } from '../data/portfolioData';
 
-export const Navbar: React.FC = () => {
+interface NavbarProps {
+  onReplayIntro?: () => void;
+}
+
+export const Navbar: React.FC<NavbarProps> = ({ onReplayIntro }) => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -142,6 +146,20 @@ export const Navbar: React.FC = () => {
               <span className="relative z-10">CONTACT ME</span>
               <span className="w-1.5 h-1.5 rounded-full bg-[#FF4D12] group-hover:scale-150 transition-transform duration-200" />
             </motion.a>
+
+            {/* Optional Replay Welcome Screen */}
+            {onReplayIntro && (
+              <button
+                onClick={onReplayIntro}
+                className={`p-2 rounded-full transition-colors ${
+                  scrolled ? 'text-zinc-400 hover:text-white hover:bg-white/10' : 'text-zinc-800 hover:text-black hover:bg-black/10'
+                }`}
+                title="Replay Opening Welcome Screen"
+                aria-label="Replay Opening Welcome Screen"
+              >
+                <Play className="w-3.5 h-3.5 fill-current" />
+              </button>
+            )}
           </div>
 
           {/* Mobile Menu Toggle Button */}

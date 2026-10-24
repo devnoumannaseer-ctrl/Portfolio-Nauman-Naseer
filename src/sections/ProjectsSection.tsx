@@ -67,6 +67,9 @@ export const ProjectsSection: React.FC = () => {
                 <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#161616]">
                   <img
                     src={project.image}
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80';
+                    }}
                     alt={project.title}
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"

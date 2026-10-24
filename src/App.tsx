@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
 import { AnimatedBackground } from './components/AnimatedBackground';
 import { CustomCursor } from './components/CustomCursor';
 import { Navbar } from './components/Navbar';
+import { CinematicWelcomeIntro } from './components/CinematicWelcomeIntro';
+import { stopAllAudio } from './utils/netflixSound';
 import { HeroSection } from './sections/HeroSection';
 import { AboutSection } from './sections/AboutSection';
 import { SkillsSection } from './sections/SkillsSection';
@@ -14,22 +17,35 @@ import { Footer } from './components/Footer';
 import { ResumeModal } from './components/ResumeModal';
 
 export const App: React.FC = () => {
+  const [showWelcomeIntro, setShowWelcomeIntro] = useState(true);
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
 
   return (
     <div className="relative min-h-screen bg-[#080808] text-white selection:bg-[#FF4D12]/30 selection:text-[#FF6B35]">
-      {/* Interactive Background */}
-      <AnimatedBackground />
+      {/* Opening Cinematic Welcome Screen inspired by the opening of the reference video */}
+      <AnimatePresence>
+        {showWelcomeIntro && (
+          <CinematicWelcomeIntro
+            onComplete={() => {
+              stopAllAudio();
+              setShowWelcomeIntro(false);
+            }}
+          />
+        )}
+      </AnimatePresence>
+
+      {/* Interactive Background - Only active after intro to ensure 0 lag during welcome screen */}
+      {!showWelcomeIntro && <AnimatedBackground />}
 
       {/* Subtle Custom Cursor for Desktop */}
       <CustomCursor />
 
       {/* Navigation Header */}
-      <Navbar />
+      <Navbar onReplayIntro={() => setShowWelcomeIntro(true)} />
 
-      {/* Main Content Regions */}
+      {/* Main Content Regions (All original portfolio sections intact) */}
       <main id="main-content" className="relative z-10">
-        <HeroSection />
+        <HeroSection onReplayIntro={() => setShowWelcomeIntro(true)} />
         <AboutSection onOpenResumeModal={() => setIsResumeModalOpen(true)} />
         <SkillsSection />
         <ProjectsSection />

@@ -170,7 +170,7 @@ export const portfolioData: PortfolioData = {
         "Detailed time and space complexity breakdown for each method"
       ],
       technologies: ["React", "TypeScript", "Tailwind CSS", "Data Structures", "Algorithms"],
-      image: "https://images.unsplash.com/photo-1516116211227-bbc1b4395e54?auto=format&fit=crop&w=1200&q=80",
+      image: "/projects/algo-visualizer.jpg",
       githubUrl: "https://github.com/devnoumannaseer-ctrl",
       liveUrl: "https://github.com/devnoumannaseer-ctrl",
       featured: true,
@@ -189,7 +189,7 @@ export const portfolioData: PortfolioData = {
         "Search by roll number, sorting by GPA, and statistical report generation"
       ],
       technologies: ["C++", "OOP", "File I/O", "Data Structures", "Memory Management"],
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
+      image: "/projects/student-management.jpg",
       githubUrl: "https://github.com/devnoumannaseer-ctrl",
       liveUrl: "https://github.com/devnoumannaseer-ctrl",
       featured: true,
@@ -208,7 +208,7 @@ export const portfolioData: PortfolioData = {
         "Clean modular codebase with PEP8 standards and type hinting"
       ],
       technologies: ["Python", "Automation", "File Parsing", "Regex", "Data Analytics"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+      image: "/projects/python-automation.jpg",
       githubUrl: "https://github.com/devnoumannaseer-ctrl",
       liveUrl: "https://github.com/devnoumannaseer-ctrl",
       featured: true,
@@ -227,7 +227,7 @@ export const portfolioData: PortfolioData = {
         "Form validation with real-time feedback and direct email trigger"
       ],
       technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide"],
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
+      image: "/projects/portfolio-hub.jpg",
       githubUrl: "https://github.com/devnoumannaseer-ctrl",
       liveUrl: "https://github.com/devnoumannaseer-ctrl",
       featured: false,

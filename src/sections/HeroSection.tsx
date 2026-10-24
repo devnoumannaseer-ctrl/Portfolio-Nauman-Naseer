@@ -1,10 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Github, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Github, Linkedin, Instagram, Play } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { portfolioData } from '../data/portfolioData';
 
-export const HeroSection: React.FC = () => {
+interface HeroSectionProps {
+  onReplayIntro?: () => void;
+}
+
+export const HeroSection: React.FC<HeroSectionProps> = ({ onReplayIntro }) => {
   // Staggered entrance animation variants for left column
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -140,7 +144,7 @@ export const HeroSection: React.FC = () => {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="md:col-span-6 lg:col-span-5 flex flex-col items-start text-left pt-6 sm:pt-0"
+            className="md:col-span-6 lg:col-span-6 flex flex-col items-start text-left pt-6 sm:pt-0"
           >
             {/* "Hi, I am" with glowing accent */}
             <motion.div variants={itemVariants} className="flex items-center gap-2 mb-2 sm:mb-3">
@@ -221,19 +225,35 @@ export const HeroSection: React.FC = () => {
                 <span className="relative z-10">CONTACT ME</span>
                 <span className="w-1.5 h-1.5 rounded-full bg-[#FF4D12] group-hover:scale-150 transition-transform duration-200" />
               </motion.a>
+
+              {/* Optional Replay Opening Intro */}
+              {onReplayIntro && (
+                <motion.button
+                  onClick={onReplayIntro}
+                  variants={socialItemVariants}
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 20 }}
+                  className="px-3.5 py-2.5 rounded-xl bg-black/10 hover:bg-black/20 text-black border border-black/10 text-xs font-mono font-bold flex items-center gap-1.5 transition-colors"
+                  title="Replay Opening Welcome Screen"
+                >
+                  <Play className="w-3.5 h-3.5 fill-black" />
+                  <span className="hidden sm:inline">Intro</span>
+                </motion.button>
+              )}
             </motion.div>
           </motion.div>
 
-          {/* RIGHT SIDE: Portrait Photograph Centered in Solid Black Background */}
+          {/* RIGHT SIDE: Portrait Photograph Positioned on the Right in Solid Black Background */}
           <motion.div
             variants={imageContainerVariants}
             initial="hidden"
             animate="visible"
-            className="md:col-span-6 lg:col-span-7 flex items-center justify-center relative pt-6 md:pt-0 md:translate-x-3 lg:translate-x-6 md:-translate-y-6 lg:-translate-y-8"
+            className="md:col-span-6 lg:col-span-6 flex items-center justify-center md:justify-end relative pt-6 md:pt-0 md:pr-4 lg:pr-8 xl:pr-14 md:translate-x-6 lg:translate-x-8 xl:translate-x-10 md:-translate-y-4 lg:-translate-y-6"
           >
-            <div className="relative w-full max-w-[340px] sm:max-w-[390px] md:max-w-[440px] lg:max-w-[480px] xl:max-w-[510px] flex items-center justify-center">
+            <div className="relative w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] lg:max-w-[390px] xl:max-w-[420px] flex items-center justify-center">
               {/* Subtle atmospheric ambient glow */}
-              <div className="absolute -inset-4 bg-gradient-to-t from-transparent via-white/5 to-[#FF4D12]/10 rounded-full blur-3xl pointer-events-none opacity-40" />
+              <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white/5 to-[#FF4D12]/10 rounded-full blur-2xl pointer-events-none opacity-30" />
 
               {/* High-definition portrait wrapper with gentle floating breath animation */}
               <motion.div
@@ -254,7 +274,7 @@ export const HeroSection: React.FC = () => {
                   fetchPriority="high"
                   decoding="async"
                   loading="eager"
-                  className="w-auto h-auto max-h-[60vh] sm:max-h-[66vh] md:max-h-[70vh] lg:max-h-[76vh] max-w-full aspect-[9/16] object-contain select-none filter contrast-[1.03] brightness-[1.02] drop-shadow-[0_20px_45px_rgba(0,0,0,0.9)]"
+                  className="w-auto h-auto max-h-[52vh] sm:max-h-[58vh] md:max-h-[66vh] lg:max-h-[72vh] max-w-full aspect-[9/16] object-contain select-none filter contrast-[1.03] brightness-[1.02] drop-shadow-[0_20px_45px_rgba(0,0,0,0.9)]"
                   style={{
                     imageRendering: '-webkit-optimize-contrast',
                     WebkitBackfaceVisibility: 'hidden',
