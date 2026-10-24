@@ -184,7 +184,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onReplayIntro }) => {
               {/* Actions & Social Media Buttons Row - Rounded social icons alongside 'CONTACT ME' pill button */}
               <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-2.5 sm:gap-3 w-full">
                 
-                {/* Rounded Social Contact Icon Buttons (5 Icons) */}
+                {/* Social Contact Icon Buttons (5 Icons) */}
                 <motion.div
                   variants={socialContainerVariants}
                   className="flex items-center gap-2 sm:gap-2.5"
@@ -203,7 +203,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onReplayIntro }) => {
                       }}
                       whileTap={{ scale: 0.94 }}
                       transition={{ type: 'spring', stiffness: 450, damping: 22 }}
-                      className={`w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#C4C4C4] text-black shadow-[2px_3px_6px_rgba(0,0,0,0.16)] border border-black/10 flex items-center justify-center transition-colors duration-200 ${item.hoverClass}`}
+                      className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#C4C4C4] text-black shadow-[2px_3px_6px_rgba(0,0,0,0.16)] border border-black/10 flex items-center justify-center transition-colors duration-200 ${item.hoverClass}`}
                       title={item.name}
                       aria-label={item.name}
                     >
@@ -212,7 +212,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onReplayIntro }) => {
                   ))}
                 </motion.div>
 
-                {/* 'CONTACT ME' Pill Button */}
+                {/* 'CONTACT ME' Button */}
                 <motion.a
                   href="#contact"
                   onClick={scrollToContact}
@@ -224,7 +224,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onReplayIntro }) => {
                   }}
                   whileTap={{ scale: 0.96 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                  className="relative overflow-hidden group px-5 py-2.5 rounded-full bg-black hover:bg-zinc-900 text-white font-extrabold text-[11px] sm:text-xs uppercase tracking-wider flex items-center gap-2 shadow-md transition-all duration-200 cursor-pointer"
+                  className="relative overflow-hidden group px-4 sm:px-5 py-2.5 rounded-xl bg-black hover:bg-zinc-900 text-white font-extrabold text-[11px] sm:text-xs uppercase tracking-wider flex items-center gap-2 shadow-md transition-all duration-200 cursor-pointer"
                 >
                   <span className="relative z-10">CONTACT ME</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-[#FF4D12] group-hover:scale-150 transition-transform duration-200" />
@@ -238,7 +238,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onReplayIntro }) => {
                     whileHover={{ scale: 1.04, y: -2 }}
                     whileTap={{ scale: 0.96 }}
                     transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                    className="px-3 py-2.5 rounded-full bg-black/10 hover:bg-black/20 text-black border border-black/15 text-[11px] sm:text-xs font-mono font-bold flex items-center gap-1.5 transition-colors cursor-pointer"
+                    className="px-3 sm:px-3.5 py-2.5 rounded-xl bg-black/10 hover:bg-black/20 text-black border border-black/15 text-[11px] sm:text-xs font-mono font-bold flex items-center gap-1.5 transition-colors cursor-pointer"
                     title="Replay Opening Welcome Screen"
                   >
                     <Play className="w-3 h-3 fill-black" />
