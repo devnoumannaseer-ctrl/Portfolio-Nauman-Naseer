@@ -55,7 +55,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onReplayIntro }) => {
             : 'bg-transparent py-5 sm:py-6 border-b border-transparent'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 flex items-center justify-between">
+        <div className="w-full px-6 sm:px-10 lg:px-14 xl:px-16 flex items-center justify-between">
           
           {/* Logo / Monogram (Left side: black when over gray hero, white when scrolled) */}
           <a
@@ -90,11 +90,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onReplayIntro }) => {
             </span>
           </a>
 
-          {/* Desktop Nav Links & CTA on right side */}
-          <div className="hidden md:flex items-center gap-8 lg:gap-10">
-            <nav className="flex items-center gap-7 lg:gap-9">
+          {/* Desktop Nav Links & CTA on the MOST RIGHT SIDE (Inside black section) */}
+          <div className="hidden md:flex items-center justify-end gap-5 lg:gap-7 xl:gap-8 ml-auto">
+            <nav className="flex items-center gap-5 lg:gap-7 xl:gap-8">
               {[
-                { name: 'About me', href: '#about' },
+                { name: 'About', href: '#about' },
                 { name: 'Skills', href: '#skills' },
                 { name: 'Portfolio', href: '#projects' },
                 { name: 'Services', href: '#services' },
@@ -110,7 +110,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onReplayIntro }) => {
                     }}
                     whileHover={{ y: -2 }}
                     transition={{ type: 'spring', stiffness: 500, damping: 25 }}
-                    className={`relative py-1 text-sm font-semibold tracking-wide transition-colors duration-200 group ${
+                    className={`relative py-1 text-xs lg:text-sm font-semibold tracking-wide transition-colors duration-200 group ${
                       isActive ? 'text-white font-bold' : 'text-zinc-300 hover:text-white'
                     }`}
                   >
@@ -134,12 +134,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onReplayIntro }) => {
                 scrollTo('#contact');
               }}
               whileHover={{
-                scale: 1.06,
+                scale: 1.05,
                 boxShadow: '0 0 24px rgba(255, 255, 255, 0.4), 0 4px 16px rgba(0,0,0,0.3)',
               }}
-              whileTap={{ scale: 0.94 }}
+              whileTap={{ scale: 0.95 }}
               transition={{ type: 'spring', stiffness: 450, damping: 22 }}
-              className="relative overflow-hidden group bg-white text-black font-extrabold text-xs tracking-wider uppercase px-6 py-2.5 rounded-full shadow-md transition-all duration-200 flex items-center gap-2"
+              className="relative overflow-hidden group bg-white text-black font-extrabold text-[11px] lg:text-xs tracking-wider uppercase px-5 py-2.5 rounded-full shadow-md transition-all duration-200 flex items-center gap-1.5 shrink-0"
             >
               {/* Shimmer sweep effect */}
               <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/50 to-transparent transition-transform duration-700 pointer-events-none" />
@@ -151,9 +151,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onReplayIntro }) => {
             {onReplayIntro && (
               <button
                 onClick={onReplayIntro}
-                className={`p-2 rounded-full transition-colors ${
-                  scrolled ? 'text-zinc-400 hover:text-white hover:bg-white/10' : 'text-zinc-800 hover:text-black hover:bg-black/10'
-                }`}
+                className="p-2 rounded-full transition-colors text-zinc-400 hover:text-white hover:bg-white/10"
                 title="Replay Opening Welcome Screen"
                 aria-label="Replay Opening Welcome Screen"
               >
