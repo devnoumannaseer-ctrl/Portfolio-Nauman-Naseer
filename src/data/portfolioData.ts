@@ -114,10 +114,10 @@ export const portfolioData: PortfolioData = {
   },
   socials: {
     github: "https://github.com/devnoumannaseer-ctrl",
-    linkedin: "https://www.linkedin.com/in/nauman-naseer-5469873a7/?isSelfProfile=true",
-    instagram: "https://www.instagram.com/naumannaseer_official?psln=MXYxb3VpYWJhcW1hdg==",
+    linkedin: "https://www.linkedin.com/in/nauman-naseer-5469873a7/",
+    instagram: "https://www.instagram.com/naumannaseer_official/",
     email: "mailto:dev.nouman.naseer@gmail.com",
-    whatsapp: "https://web.whatsapp.com/",
+    whatsapp: "https://api.whatsapp.com/send?text=Hi%20Nauman%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect%21",
   },
   navItems: [
     { name: "About me", href: "#about" },
