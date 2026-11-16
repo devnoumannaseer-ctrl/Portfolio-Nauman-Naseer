@@ -1,272 +1,430 @@
-<h2 align="center">
-  <!-- 🔥 Animated Header Wave (Dark Espresso Brown, Mocha & Luxurious Off-White) -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1A110D,3E2723,6D4C41,C4A482&height=170&section=header&text=Nauman%20Naseer&fontSize=50&fontColor=FFF8F0&animation=twinkling&desc=CS%20Undergrad%20%7C%20C%2B%2B%20%26%20Python%20Developer%20%7C%20Algorithmic%20Thinker&descAlignY=75" width="100%" alt="Nauman Naseer Header" />
+<!-- ================================================================= -->
+<!-- NAUMAN NASEER - PREMIUM GITHUB PROFILE README                     -->
+<!-- Designed to mirror: https://portfolio-nauman-naseer.vercel.app/   -->
+<!-- Aesthetic: Obsidian Black (#080808), Light Gray (#D6D6D6),        -->
+<!-- Neon Orange Accent (#FF4D12), Dark Borders (#262626)             -->
+<!-- ================================================================= -->
 
-  <!-- ⚡ Dynamic Animated Typing (Warm Off-White & Brown Palette) -->
-  <a href="https://github.com/devnoumannaseer-ctrl">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2500&pause=1000&color=FAF0E6&center=true&vCenter=true&width=620&lines=CS+Undergraduate+%F0%9F%8E%93;C%2B%2B+%26+Python+Developer+%E2%9A%A1;Data+Structures+%26+OOP+Specialist+%F0%9F%A7%A0;Building+High-Performance+Software+%F0%9F%9A%80;01100011+01101111+01100100+01100101" alt="typing banner">
-  </a>
+<div align="center">
+
+  <!-- 🔥 Top Animated Header Banner (Obsidian, Light-Gray & Electric Orange Accent) -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=000000,0B0B0B,161616,262626,D6D6D6,FF4D12&height=180&section=header&text=NAUMAN%20NASEER&fontSize=48&fontColor=FFFFFF&animation=twinkling&desc=Computer%20Science%20Student%20%7C%20Python%20%26%20C%2B%2B%20Programmer&descAlignY=75" width="100%" alt="Nauman Naseer Profile Header" />
+
+  <!-- ⚡ Portfolio Signature Diagonal Split & Hero Card SVG -->
+  <img src="https://raw.githubusercontent.com/devnoumannaseer-ctrl/devnoumannaseer-ctrl/main/assets/hero-banner.svg" width="100%" alt="Nauman Naseer Hero Banner" />
+
   <br><br>
 
-  <!-- 🌐 Direct API Contact Badges (Brown & Off-White) -->
+  <!-- ⌨️ Live Dynamic Typing Effect (Space Grotesk & JetBrains Mono) -->
+  <a href="https://github.com/devnoumannaseer-ctrl">
+    <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=23&duration=2400&pause=1000&color=FFFFFF&center=true&vCenter=true&width=750&lines=Computer+Science+Student+%F0%9F%8E%93;Python+%26+C%2B%2B+Programmer+%E2%9A%A1;Data+Structures+%26+Algorithms+%F0%9F%A7%A0;Building+Practical+Software+Systems+%F0%9F%9B%A0%EF%B8%8F;Learn+deeply%2C+code+with+intent%2C+build+to+last+%F0%9F%9A%80" alt="Animated Typing Banner" />
+  </a>
+
+  <br><br>
+
+  <!-- 🌐 Quick Navigation & Contact Pills (Premium Dark Theme Matching Portfolio) -->
   <p align="center">
+    <a href="https://portfolio-nauman-naseer.vercel.app/" target="_blank">
+      <img src="https://img.shields.io/badge/Live_Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=FF4D12" alt="Portfolio Website" />
+    </a>
+    &nbsp;
     <a href="https://www.linkedin.com/in/nauman-naseer-5469873a7/" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-Nauman_Naseer-3E2723?style=for-the-badge&logo=linkedin&logoColor=FAF0E6" alt="LinkedIn Profile" />
-    </a>
-    &nbsp;
-    <a href="https://www.instagram.com/naumannaseer_official/" target="_blank">
-      <img src="https://img.shields.io/badge/Instagram-%40naumannaseer__official-5C3D2E?style=for-the-badge&logo=instagram&logoColor=FAF0E6" alt="Instagram Profile" />
-    </a>
-    &nbsp;
-    <a href="https://api.whatsapp.com/send?text=Hi%20Nauman%2C%20I%20saw%20your%20GitHub%20profile%20and%20would%20like%20to%20connect%21" target="_blank">
-      <img src="https://img.shields.io/badge/WhatsApp-Chat_Directly-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp API" />
+      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile" />
     </a>
     &nbsp;
     <a href="mailto:dev.nouman.naseer@gmail.com">
-      <img src="https://img.shields.io/badge/Email-dev.nouman.naseer%40gmail.com-1A110D?style=for-the-badge&logo=gmail&logoColor=FAF0E6" alt="Email" />
+      <img src="https://img.shields.io/badge/Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Send Email" />
+    </a>
+    &nbsp;
+    <a href="https://api.whatsapp.com/send?text=Hi%20Nauman%2C%20I%20saw%20your%20GitHub%20profile%20and%20would%20like%20to%20connect%21" target="_blank">
+      <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Chat on WhatsApp" />
+    </a>
+    &nbsp;
+    <a href="https://www.instagram.com/naumannaseer_official/" target="_blank">
+      <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Profile" />
     </a>
   </p>
 
-</h2>
+</div>
+
+<br>
+
+<!-- Visual Divider -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/devnoumannaseer-ctrl/devnoumannaseer-ctrl/main/assets/neon-divider.svg" width="100%" alt="Divider" />
+</p>
+
+<br>
+
+<!-- ================================================================= -->
+<!-- SECTION: ABOUT ME                                                 -->
+<!-- ================================================================= -->
+
+## 📌 `01.` About Me
 
 <table>
   <tr>
-    <td width="55%" valign="top">
+    <td width="60%" valign="top">
 
-I'm a **Computer Science student** who enjoys turning logical concepts into working software, mastering core computing foundations, and solving problems that challenge my algorithmic thinking.
+### Building Strong Foundations in Computer Science
 
-### Currently, I'm balancing three things:
+I am an enthusiastic **Computer Science undergraduate** focused on engineering robust software architectures, mastering core computing principles, and solving complex algorithmic challenges.
 
-- 🧠 **Solving DSA & algorithmic problems** in C++ and Python with focus on optimal time & space complexity
-- 💻 **Building practical software applications** using robust Object-Oriented Programming (OOP) architectures
-- 🌐 **Crafting modern, responsive web experiences** using React, TypeScript, and Tailwind CSS
+I combine deep foundational knowledge—such as low-level memory handling in **C++**, high-level scripting in **Python**, and robust **Object-Oriented Design**—with modern web technologies to engineer clean, maintainable, and high-performance solutions.
+
+#### 🎯 Core Engineering Passions:
+- 💻 **Software Engineering:** Writing modular, readable, self-documenting code with decoupled design patterns.
+- 🧠 **Data Structures & Algorithms (DSA):** Solving algorithmic problems with strict time & space complexity optimization ($O(N)$, $O(\log N)$).
+- ⚡ **C++ and Python Programming:** Building performance-critical CLI utilities, file-parsing pipelines, and computational engines.
+- 🏛️ **Object-Oriented Programming (OOP):** Solid class hierarchies, encapsulation, polymorphism, abstraction, and memory leak prevention.
+- 🌐 **Modern Web Development:** Crafting responsive, intuitive user interfaces with **React**, **TypeScript**, and **Tailwind CSS**.
+- 🔍 **Logical Problem Solving:** Edge-case analysis, systematic debugging, and computational thinking.
+
+```yaml
+Status: Open for Internships & Collaborations 💼
+Mindset: "Learn deeply, code with intent, build to last 🚀"
+Current Focus: Advanced Algorithms, C++ Systems, Full-Stack Architecture
+```
 
     </td>
-    <td width="45%" align="center" valign="middle">
-      <img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif" width="400" alt="Coding Animated GIF">
+    <td width="40%" align="center" valign="middle">
+      <a href="https://portfolio-nauman-naseer.vercel.app/" target="_blank">
+        <img src="https://i.postimg.cc/G29tQfmY/my-pic.jpg" width="310" style="border-radius: 14px; border: 2px solid #262626;" alt="Nauman Naseer Portrait" />
+      </a>
+      <br>
+      <sub><b>NAUMAN NASEER</b> • BS Computer Science</sub>
     </td>
   </tr>
 </table>
 
----
+<br>
 
-## ⚡ Tech Stack
-
-### 👨‍💻 Languages
-
-<p>
-  <img src="https://skillicons.dev/icons?i=cpp,c,python,java,js" alt="Languages" />
+<!-- Visual Divider -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/devnoumannaseer-ctrl/devnoumannaseer-ctrl/main/assets/neon-divider.svg" width="100%" alt="Divider" />
 </p>
 
-### 🌐 Web & Frontend Development
+<br>
 
-<p>
-  <img src="https://skillicons.dev/icons?i=react,ts,tailwind,html,css,vite" alt="Frontend Development" />
-</p>
+<!-- ================================================================= -->
+<!-- SECTION: TECH STACK                                               -->
+<!-- ================================================================= -->
 
-### 🗄️ Databases & Persistence
-
-<p>
-  <img src="https://skillicons.dev/icons?i=mysql,postgres" alt="Databases" />
-</p>
-
-**Also familiar with:** SQL • Relational Schema Design • Normalization (1NF - 3NF) • Disk File I/O Streams
-
-### 🧩 Computer Science & Core Foundations
-
-`Data Structures & Algorithms` • `Object-Oriented Programming (OOP)` • `Database Systems` • `Operating Systems` • `Time & Space Complexity` • `Memory Management` • `Pointers & References` • `Algorithmic Problem Solving`
-
-### 🛠️ Tools & Environments
-
-<p>
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,linux" alt="Tools" />
-</p>
-
-**Also:** IntelliJ IDEA • PyCharm • Bash Shell • Terminal Workflow
-
----
-
-# 📊 GitHub Stats
+## ⚡ `02.` Tech Stack & Engineering Toolkit
 
 <div align="center">
-  <table border="0">
+  <!-- Unified Dark Icon Showcase -->
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=cpp,python,c,java,js,ts,react,tailwind,html,css,mysql,postgres,git,github,vscode,linux&perline=16&theme=dark" alt="Tech Stack Icons" />
+  </a>
+</div>
+
+<br>
+
+### 🛠️ Detailed Breakdown by Category
+
+| Category | Technologies & Tools | Key Capabilities |
+| :--- | :--- | :--- |
+| **Programming Languages** | `C++` • `Python` • `Java` • `C` • `JavaScript (ES6+)` • `TypeScript` • `SQL` | Memory management, STL, OOP, typing, data structures, scripting, relational queries |
+| **Web & Frontend** | `React.js` • `Tailwind CSS` • `HTML5` • `CSS3` • `Vite` • `Framer Motion` | Modern component architecture, responsive UI, utility-first design, fluid state management |
+| **Databases & Storage** | `MySQL` • `PostgreSQL` • `Relational Schemas` • `Disk File I/O` | 1NF-3NF schema normalization, complex joins, file streaming (`ifstream`/`ofstream`), data integrity |
+| **Core CS Foundations** | `Data Structures` • `Algorithms` • `OOP Architecture` • `OS Fundamentals` | Binary trees, graphs, sorting/searching, Big-O analysis, process scheduling, concurrency basics |
+| **Tools & Platforms** | `Git` • `GitHub` • `VS Code` • `Linux / Bash` • `IntelliJ IDEA` • `PyCharm` | Version control, branching strategies, shell automation, debugging, clean refactoring |
+
+<br>
+
+<!-- Visual Divider -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/devnoumannaseer-ctrl/devnoumannaseer-ctrl/main/assets/neon-divider.svg" width="100%" alt="Divider" />
+</p>
+
+<br>
+
+<!-- ================================================================= -->
+<!-- SECTION: GITHUB METRICS & DASHBOARD                               -->
+<!-- ================================================================= -->
+
+## 📊 `03.` GitHub Performance & Analytics
+
+<div align="center">
+  <table border="0" width="100%">
     <tr>
-      <td align="center" width="50%">
-        <img src="https://github-readme-stats-anuraghazra.vercel.app/api?username=devnoumannaseer-ctrl&show_icons=true&bg_color=1A110D&border_color=5C3D2E&title_color=FFF8F0&text_color=FAF0E6&icon_color=C4A482&border_radius=14" width="100%" alt="Nauman's GitHub Stats" />
+      <td width="50%" align="center" valign="middle">
+        <a href="https://github.com/devnoumannaseer-ctrl">
+          <img src="https://github-readme-stats-anuraghazra.vercel.app/api?username=devnoumannaseer-ctrl&show_icons=true&bg_color=080808&border_color=262626&title_color=FFFFFF&text_color=B8B8B8&icon_color=FF4D12&border_radius=12&locale=en" width="100%" alt="Nauman's GitHub Overview Stats" />
+        </a>
       </td>
-      <td align="center" width="50%">
-        <img src="https://github-readme-stats-anuraghazra.vercel.app/api/top-langs/?username=devnoumannaseer-ctrl&layout=compact&bg_color=1A110D&border_color=5C3D2E&title_color=FFF8F0&text_color=FAF0E6&icon_color=C4A482&border_radius=14" width="100%" alt="Top Languages" />
+      <td width="50%" align="center" valign="middle">
+        <a href="https://github.com/devnoumannaseer-ctrl">
+          <img src="https://github-readme-stats-anuraghazra.vercel.app/api/top-langs/?username=devnoumannaseer-ctrl&layout=compact&bg_color=080808&border_color=262626&title_color=FFFFFF&text_color=B8B8B8&icon_color=FF4D12&border_radius=12" width="100%" alt="Most Used Languages" />
+        </a>
       </td>
     </tr>
   </table>
 </div>
 
----
+<div align="center">
+  <a href="https://github.com/devnoumannaseer-ctrl">
+    <img src="https://streak-stats.demolab.com/?user=devnoumannaseer-ctrl&theme=dark&background=080808&border=262626&stroke=B8B8B8&ring=FF4D12&fire=FF4D12&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=B8B8B8&sideLabels=B8B8B8&dates=737373&border_radius=12" width="95%" alt="Nauman's GitHub Streak Stats" />
+  </a>
+</div>
 
-# 🔥 Contribution Streak
+<br>
+
+### 📈 Contribution Activity Trend
+
+<div align="center">
+  <a href="https://github.com/devnoumannaseer-ctrl">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=devnoumannaseer-ctrl&bg_color=080808&color=FF4D12&line=FF4D12&point=FFFFFF&area=true&hide_border=true" width="100%" alt="GitHub Contribution Activity Graph" />
+  </a>
+</div>
+
+<br>
+
+<!-- Visual Divider -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/devnoumannaseer-ctrl/devnoumannaseer-ctrl/main/assets/neon-divider.svg" width="100%" alt="Divider" />
+</p>
+
+<br>
+
+<!-- ================================================================= -->
+<!-- SECTION: ANIMATED CONTRIBUTION SNAKE                              -->
+<!-- ================================================================= -->
+
+## 🐍 `04.` Contribution Activity Grid Snake
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=devnoumannaseer-ctrl&theme=dark&background=1A110D&border=5C3D2E&stroke=C4A482&ring=C4A482&fire=FAF0E6&currStreakNum=FAF0E6&sideNums=FAF0E6&currStreakLabel=C4A482&sideLabels=C4A482&dates=A89078&border_radius=14" alt="GitHub Streak Stats" />
+  <sub>Automated GitHub Actions workflow updates contribution grid dynamics continuously</sub>
 </p>
 
----
+<div align="center">
+  <!-- Contribution Grid Snake (Auto-updated via GitHub Actions, matches portfolio palette) -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devnoumannaseer-ctrl/devnoumannaseer-ctrl/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/devnoumannaseer-ctrl/devnoumannaseer-ctrl/output/github-contribution-grid-snake.svg">
+    <img alt="Contribution Grid Snake Animation" src="https://raw.githubusercontent.com/devnoumannaseer-ctrl/devnoumannaseer-ctrl/output/github-contribution-grid-snake-dark.svg" width="100%">
+  </picture>
+</div>
 
-# 🧩 My Problem-Solving Journey
+<br>
 
-### 🟤 Core Algorithmic & Problem-Solving Focus
-
-I solve problems regularly to continuously sharpen:
-
-* **Data Structures** (Arrays, Linked Lists, Trees, Stacks, Queues, Hash Maps)
-* **Algorithms** (Dijkstra, A* Search, MergeSort, QuickSort, Binary Search)
-* **Object-Oriented Architecture** (Encapsulation, Polymorphism, Inheritance, Abstraction)
-* **Logical Thinking & Edge-Case Analysis**
-* **Time & Space Complexity Optimization (Big-O)**
-* **Code Efficiency & Pointer Safety**
-
-> 🧠 **My goal isn't just to write code that passes tests — it's to master computational thinking and build resilient solutions.**
-
-<p align="left">
-  <a href="https://github.com/devnoumannaseer-ctrl">
-    <img src="https://img.shields.io/badge/Problem--Solving-DSA_%26_Algorithms-5C3D2E?style=for-the-badge&logo=leetcode&logoColor=FAF0E6" alt="DSA Badge" />
-  </a>
-  &nbsp;
-  <a href="https://i.postimg.cc/x1cD1z6X/Nauman-naseer.png" target="_blank">
-    <img src="https://img.shields.io/badge/Curriculum_Vitae-Preview_CV-3E2723?style=for-the-badge&logo=adobeacrobatreader&logoColor=FAF0E6" alt="CV Badge" />
-  </a>
+<!-- Visual Divider -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/devnoumannaseer-ctrl/devnoumannaseer-ctrl/main/assets/neon-divider.svg" width="100%" alt="Divider" />
 </p>
 
----
+<br>
 
-# 📚 What I've Learned
+<!-- ================================================================= -->
+<!-- SECTION: FEATURED PROJECTS                                        -->
+<!-- ================================================================= -->
 
-✅ **Object-Oriented Programming** (Deep OOP patterns in C++, Python, and Java)  
-✅ **Data Structures & Algorithms** (Trees, Graphs, Sorting, Searching, Complexity Analysis)  
-✅ **Dynamic Memory Allocation** (Pointers, References, and memory leak prevention in C++)  
-✅ **Relational Database Design** (Schema design, normalization, complex SQL queries)  
-✅ **Modern Web Engineering** (React, TypeScript, component architecture, Tailwind CSS)  
-✅ **Version Control Workflows** (Git branching, commits, repositories, open-source best practices)  
-✅ **Systems & Operating Fundamentals** (Processes, threads, CPU scheduling, file storage streams)  
-✅ **Clean Code & Refactoring** (Modular structures, self-documenting code, error handling)  
+## 🚀 `05.` Featured Projects
 
----
+A curated selection of software systems, web engineering applications, and computational implementations:
 
-# 🌱 Currently Learning
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🌐 <a href="https://github.com/devnoumannaseer-ctrl/Portfolio-Nauman-Naseer">Portfolio-Nauman-Naseer</a></h3>
+      <p><b>Personal Developer Portfolio &amp; Digital Showcase</b></p>
+      <p>High-performance, modern developer portfolio featuring custom diagonal split geometry, smooth Framer Motion animations, interactive terminal preview, dynamic project filters, and high visual contrast.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+        <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
+        <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" />
+        <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" />
+      </p>
+      <p>
+        🔗 <a href="https://github.com/devnoumannaseer-ctrl/Portfolio-Nauman-Naseer"><b>GitHub Repository</b></a> •
+        🌍 <a href="https://portfolio-nauman-naseer.vercel.app/" target="_blank"><b>Live Application</b></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🍽️ <a href="https://github.com/devnoumannaseer-ctrl/Fonro-restaurant">Fonro-restaurant</a></h3>
+      <p><b>Interactive Restaurant &amp; Culinary Experience Web App</b></p>
+      <p>A responsive modern restaurant landing page and digital menu platform featuring fluid navigation, culinary dish showcases, customer table booking UI, and seamless mobile adaptation.</p>
+      <p>
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+        <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
+      </p>
+      <p>
+        🔗 <a href="https://github.com/devnoumannaseer-ctrl/Fonro-restaurant"><b>GitHub Repository</b></a> •
+        🌍 <a href="https://fonro-restaurant.vercel.app/" target="_blank"><b>Live Application</b></a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🧩 <a href="https://github.com/devnoumannaseer-ctrl">Algorithm &amp; Pathfinding Visualizer</a></h3>
+      <p><b>Interactive Computer Science Educational Simulator</b></p>
+      <p>Visual simulation engine demonstrating Dijkstra's algorithm, A* search on custom obstacle grids, and fundamental sorting routines (QuickSort, MergeSort) with real-time speed adjustments.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Algorithms-Dijkstra_%26_A*-FF4D12?style=flat-square" />
+        <img src="https://img.shields.io/badge/Data_Structures-Graphs_%26_Trees-161616?style=flat-square" />
+        <img src="https://img.shields.io/badge/React-TypeScript-61DAFB?style=flat-square" />
+      </p>
+      <p>
+        🔗 <a href="https://github.com/devnoumannaseer-ctrl"><b>Source &amp; Documentation</b></a> •
+        🌐 <a href="https://portfolio-nauman-naseer.vercel.app/#projects"><b>Architecture View</b></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🏛️ <a href="https://github.com/devnoumannaseer-ctrl">Student Management System</a></h3>
+      <p><b>Object-Oriented C++ &amp; Persistent Disk Storage Engine</b></p>
+      <p>Robust desktop management system engineered in modern C++ applying strict OOP architectures, dynamic memory allocation with zero leaks, and resilient file persistence with stream I/O.</p>
+      <p>
+        <img src="https://img.shields.io/badge/C%2B%2B-Core_OOP-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
+        <img src="https://img.shields.io/badge/Storage-Binary_File_I%2FO-161616?style=flat-square" />
+        <img src="https://img.shields.io/badge/Memory-Zero_Leaks-262626?style=flat-square" />
+      </p>
+      <p>
+        🔗 <a href="https://github.com/devnoumannaseer-ctrl"><b>Source &amp; Documentation</b></a> •
+        🌐 <a href="https://portfolio-nauman-naseer.vercel.app/#projects"><b>Architecture View</b></a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🐍 <a href="https://github.com/devnoumannaseer-ctrl">Python Data Processing &amp; Automation Suite</a></h3>
+      <p><b>Automated File Parsing &amp; Dataset Validation Toolkit</b></p>
+      <p>Modular Python automation suite for parsing multi-format CSV/JSON datasets, performing integrity checks, eliminating duplicate entries, and compiling summary metrics into formatted reports.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/Automation-Scripts-FF4D12?style=flat-square" />
+        <img src="https://img.shields.io/badge/Data-Parsing_%26_Regex-161616?style=flat-square" />
+      </p>
+      <p>
+        🔗 <a href="https://github.com/devnoumannaseer-ctrl"><b>Source &amp; Documentation</b></a> •
+        🌐 <a href="https://portfolio-nauman-naseer.vercel.app/#projects"><b>Architecture View</b></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🤝 <a href="https://github.com/devnoumannaseer-ctrl/Practice-Repo">Practice-Repo</a></h3>
+      <p><b>Professional Git Workflow &amp; Team Collaboration</b></p>
+      <p>Dedicated environment for mastering modern Git workflows, feature-branch workflows, PR review conventions, rebase strategies, and collaborative repository management.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Git-Branching-F05032?style=flat-square&logo=git&logoColor=white" />
+        <img src="https://img.shields.io/badge/GitHub-Pull_Requests-181717?style=flat-square&logo=github&logoColor=white" />
+        <img src="https://img.shields.io/badge/Workflow-CI%2FCD-262626?style=flat-square" />
+      </p>
+      <p>
+        🔗 <a href="https://github.com/devnoumannaseer-ctrl/Practice-Repo"><b>GitHub Repository</b></a> •
+        📖 <a href="https://github.com/devnoumannaseer-ctrl/Practice-Repo#readme"><b>Documentation</b></a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- Visual Divider -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/devnoumannaseer-ctrl/devnoumannaseer-ctrl/main/assets/neon-divider.svg" width="100%" alt="Divider" />
+</p>
+
+<br>
+
+<!-- ================================================================= -->
+<!-- SECTION: CURRENTLY LEARNING & GOALS                               -->
+<!-- ================================================================= -->
+
+## 🌱 `06.` Currently Learning & Goals
 
 ```yaml
-Currently:
-  - Deepening Advanced Data Structures & Graph Algorithms
-  - Engineering High-Performance C++ Logic & File Systems
-  - Designing Full-Stack Web Prototypes with Python & React
-  - Mastering Operating Systems Internals & Memory Architecture
-  - Strengthening Algorithmic Speed & Problem Decomposition
+Current Active Studies:
+  - 🧠 Advanced Data Structures: Segment Trees, Disjoint Set Union (DSU), Trie Structures
+  - ⚡ High-Performance C++: Move Semantics, Smart Pointers, STL Deep-Dive, Multi-threading
+  - 🐍 Python Engineering: Production Scripting, Memory Profiling, Clean Architectures
+  - 🌐 Full-Stack Modern Web: React 19, TypeScript Strict Mode, Next.js, REST APIs
+  - 🤖 Applied Computing: Foundations of Machine Learning, Automation Pipelines
 ```
 
----
-
-# 🎯 What's Next?
-
-My journey is focused on becoming an exceptional software engineer with unshakeable core fundamentals.
-
-### 🔭 Next Goals
-
-**01.** 🚀 Master Advanced Algorithmic Patterns & Graph Theory  
-**02.** ⚡ Engineer Production-Grade C++ and Python Systems  
-**03.** 🌐 Architect Full-Stack Modern Web Applications  
-**04.** 🤖 Explore Foundations of AI, Machine Learning & Automation  
-**05.** 💡 Contribute to High-Impact Open Source Repositories  
-
-### 🛣️ My Roadmap
+### 🛣️ Engineering Roadmap
 
 ```text
-CS Theory & Programming Fundamentals
-                ↓
-Data Structures & Algorithmic Analysis (C++ / Python)
-                ↓
-Object-Oriented Software Design & Architecture
-                ↓
-Modern Frontend & Web Systems (React & Tailwind CSS)
-                ↓
-Systems Programming, Databases & Optimization
-                ↓
-      Software Craftsman & Engineer 🚀
+ ┌────────────────────────────────────────────────────────────────────────┐
+ │                      Computer Science Fundamentals                     │
+ │          (Data Structures, Algorithmic Analysis, Time Complexity)      │
+ └───────────────────────────────────┬────────────────────────────────────┘
+                                     │
+                                     ▼
+ ┌────────────────────────────────────────────────────────────────────────┐
+ │                   Object-Oriented Software Engineering                 │
+ │       (Production C++, Clean Python, SOLID Principles, System Architecture)│
+ └───────────────────────────────────┬────────────────────────────────────┘
+                                     │
+                                     ▼
+ ┌────────────────────────────────────────────────────────────────────────┐
+ │                    Modern Web & Scalable Systems                       │
+ │              (React, TypeScript, Tailwind CSS, API Integrations)       │
+ └───────────────────────────────────┬────────────────────────────────────┘
+                                     │
+                                     ▼
+ ┌────────────────────────────────────────────────────────────────────────┐
+ │               🚀 High-Performance Software Engineer                   │
+ └────────────────────────────────────────────────────────────────────────┘
 ```
 
----
+<br>
 
-# 🐍 My Contributions
-
+<!-- Visual Divider -->
 <p align="center">
-  <!-- Animated Contribution Grid Snake -->
-  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="Animated Contribution Snake" />
+  <img src="https://raw.githubusercontent.com/devnoumannaseer-ctrl/devnoumannaseer-ctrl/main/assets/neon-divider.svg" width="100%" alt="Divider" />
 </p>
 
----
+<br>
 
-# 💭 A Little About Me
+<!-- ================================================================= -->
+<!-- SECTION: LET'S CONNECT                                            -->
+<!-- ================================================================= -->
 
-```javascript
-const nauman = {
-    name: "Nauman Naseer",
-    education: "Bachelor of Science in Computer Science (BSCS)",
-    location: "Pakistan 🇵🇰",
+## 🤝 `07.` Let's Connect
 
-    passions: [
-        "Algorithmic Problem Solving",
-        "C++ & Python Software Engineering",
-        "Object-Oriented Architecture",
-        "Modern Responsive Frontend Craftsmanship"
-    ],
+I am always keen to discuss **software engineering, open-source projects, algorithmic problem-solving, and internship opportunities.** Feel free to reach out across any platform:
 
-    currentlyDoing: [
-        "Mastering DSA & Algorithmic Challenges",
-        "Building Real-World Software Systems",
-        "Writing Clean, Well-Structured Code"
-    ],
+<div align="center">
 
-    status: "Available for Internships & Projects 💼",
+  <table border="0">
+    <tr>
+      <td align="center">
+        <a href="https://portfolio-nauman-naseer.vercel.app/" target="_blank">
+          <img src="https://img.shields.io/badge/Portfolio-Visit_Website-000000?style=for-the-badge&logo=vercel&logoColor=FF4D12" alt="Portfolio" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://www.linkedin.com/in/nauman-naseer-5469873a7/" target="_blank">
+          <img src="https://img.shields.io/badge/LinkedIn-Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="mailto:dev.nouman.naseer@gmail.com">
+          <img src="https://img.shields.io/badge/Gmail-dev.nouman.naseer%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://api.whatsapp.com/send?text=Hi%20Nauman%2C%20I%20saw%20your%20GitHub%20profile%20and%20would%20like%20to%20connect%21" target="_blank">
+          <img src="https://img.shields.io/badge/WhatsApp-Chat_Directly-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" />
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://www.instagram.com/naumannaseer_official/" target="_blank">
+          <img src="https://img.shields.io/badge/Instagram-%40naumannaseer__official-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+        </a>
+      </td>
+    </tr>
+  </table>
 
-    mindset: "Learn deeply, code with intent, build to last 🚀"
-};
-```
+  <br>
 
----
+  <sub>⭐ If you find something inspiring or helpful in my repositories, consider starring them!</sub>
 
-# 🤝 Let's Connect
+  <br><br>
 
-I'm always interested in connecting with **fellow developers, students, builders, and recruiters working on exciting ideas and software opportunities.**
+  <!-- Animated Twinkling Footer Wave (Obsidian to Electric Orange) -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=FF4D12,D6D6D6,262626,161616,0B0B0B,000000&height=120&section=footer&animation=twinkling" width="100%" alt="Footer Banner" />
 
-<p align="center">
-  <a href="https://github.com/devnoumannaseer-ctrl">
-    <img src="https://img.shields.io/badge/GitHub-devnoumannaseer--ctrl-1A110D?style=for-the-badge&logo=github&logoColor=FAF0E6"/>
-  </a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/nauman-naseer-5469873a7/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Nauman_Naseer-3E2723?style=for-the-badge&logo=linkedin&logoColor=FAF0E6"/>
-  </a>
-  &nbsp;
-  <a href="https://www.instagram.com/naumannaseer_official/" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-%40naumannaseer__official-5C3D2E?style=for-the-badge&logo=instagram&logoColor=FAF0E6"/>
-  </a>
-  &nbsp;
-  <a href="https://api.whatsapp.com/send?text=Hi%20Nauman%2C%20I%20saw%20your%20GitHub%20profile%20and%20would%20like%20to%20connect%21" target="_blank">
-    <img src="https://img.shields.io/badge/WhatsApp-Click_to_Chat-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-  </a>
-  &nbsp;
-  <a href="mailto:dev.nouman.naseer@gmail.com">
-    <img src="https://img.shields.io/badge/Email-dev.nouman.naseer%40gmail.com-1A110D?style=for-the-badge&logo=gmail&logoColor=FAF0E6" alt="Email" />
-  </a>
-</p>
-
----
-
-<p align="center">
-
-### ⭐ If you find something interesting here, consider leaving a star!
-
-**Thanks for visiting my profile!** ☕
-
-<!-- Animated Twinkling Footer Wave (Cream & Warm Mocha Brown) -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=C4A482,6D4C41,3E2723,1A110D&height=110&section=footer&animation=twinkling" width="100%" alt="Footer Banner" />
-
-</p>
+</div>
